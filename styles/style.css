@@ -1,0 +1,180 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* VARIABLES */
+:root {
+    --primary-color: #cfc310;
+    --dark-color: #0f0f0f;
+    --gray-color: #808080;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px;
+}
+
+/* RESET CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* GLOBAL CSS */
+section {
+    padding: 70px 0;
+}
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btm-orange {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.text-orange {
+    color: var(--primary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.fs-7 {
+    font-size:var(--small-font-size);
+}
+
+.form-control:focus {
+box-shadow: none;
+border-color: var(--primary-color)
+}
+/* CSS PER SECTION */
+
+/* NAVBAR */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color: var(--primary-color);
+}
+/* HEADER */
+.header-section .header-tittle{
+    font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill {
+    color: var(--dark-color);
+}
+.header-section .header-skill :hover {
+    color: var(--primary-color);
+}
+    .header-section .header-skill i{
+        transition: .3s;
+    }
+
+.header-section .header-skill:hover i {
+ transform: rotate(-45deg);
+
+}
+.header-skill {
+    margin-bottom: 15px; /* Tambahkan jarak antar elemen */
+}
+ .header-section .header-img {
+    width:50%
+ }
+
+ .card-body img {
+    max-width: 30%; /* Gambar tidak melebihi lebar kontainer */
+ 
+  /* Section Styling */
+.portofolio-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* Portofolio Card Styling */
+  .portofolio-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portofolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Styling */
+  .portofolio-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Details Section */
+  .portofolio-details {
+    padding: 15px;
+  }
+  
+  .portofolio-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Warna hitam */
+    margin-bottom: 10px;
+  }
+  
+  .portofolio-description {
+    font-size: 14px;
+    color: #000; /* Warna hitam */
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .portofolio-link {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000; /* Warna hitam */
+  }
+  
+  .portofolio-link:hover {
+    text-decoration: underline;
+    color: #000000; /* Warna abu-abu gelap */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .portofolio-image {
+      height: 150px; /* Sesuaikan ukuran gambar */
+    }
+  
+    .portofolio-title {
+      font-size: 16px;
+    }
+  
+    .portofolio-description {
+      font-size: 13px;
+    }
+  }
+  
